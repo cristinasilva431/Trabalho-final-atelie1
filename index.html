@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Corpo Divergente</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #ffed00;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    model-viewer {
+      width: 600px;
+      height: 600px;
+      margin-bottom: 20px;
+    }
+    .inspiracao {
+      text-align: center;
+    }
+    .inspiracao img {
+      max-width: 600px;
+      width: 100%;
+      border: 3px solid #000;
+      border-radius: 10px;
+    }
+    .inspiracao p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Corpo Divergente</h1>
+  
+  <!-- Modelo 3D -->
+  <model-viewer src="modelo-corpo-divergente.glb" alt="Modelo 3D" auto-rotate camera-controls background-color="#ffed00"></model-viewer>
+  
+  <!-- Imagem de inspiração -->
+  <div class="inspiracao">
+    <img src="referencia-galo.jpeg" alt="Obra de inspiração">
+    <p>Imagem de referência utilizada no processo criativo</p>
+  </div>
+</body>
+</html>
+
